@@ -37,7 +37,7 @@ span.phonetic{
 	padding:0px 0 5px 10px;
 }
 h1.myName{
-	font-size:5em;
+	font-size:300%;
 	color:white;
 }
 
@@ -55,11 +55,35 @@ img.myPic{
 	margin-top:15px;
 }
 
-p.myJob{
+span.myJob{
 	color:white;
-	font-size:5em;	
+	font-size:300%;	
 }
 
 div.myName, div.myPic, div.myJob{
 	text-align: center;
+}
+
+.block{
+	background-color:#2E2F3A;
+	padding:20px;
+	text-align: center;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.block p{
+	margin:10px 0 10px 0;
+	color:white;
+	font-size:150%;
+}
+.magnaBar{
+	width:100%;
+	height:20px;
+	background-color:#383947;
+}
+
+.progressBar{
+	background-color:#E86675;
+	width:95%;
+	height:20px;
 }
