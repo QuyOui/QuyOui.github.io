@@ -70,26 +70,53 @@ div.myName, div.myPic, div.myJob{
 
 .block{
 	background-color:#2E2F3A;
-	padding:10px;
+	padding:10px 10px 20px 10px;
 	text-align: center;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .block p{
-	margin:10px 0 10px 0;
+	margin:0px 0 15px 0;
 	padding:0;
 	color:white;
 	font-size:150%;
 }
 .totalBar{
 	width:100%;
-	height:30px;
+	height:40px;
 	background-color:#383947;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	border-radius:3px;
 }
 
 .progressBar{
-	background-color:#E86675;
-	width:95%;
-	height:30px;
+	height:40px;
 	margin:10px 0 10px 0;
+	border-radius:3px;
+}
+
+.progressBar.strategy{
+	width:90%;
+	background-color:#E86675;
+}
+
+.progressBar.dataAnalytics{
+	width:80%;
+	background-color:#A085FF;
+}
+
+.progressBar.programming{
+	width:60%;
+	background-color:#E4D737;
+}
+
+.progressBar.changeManagement{
+	width:75%;
+	background-color:#40E0AD;
+}
+
+.progressBar span{
+	color:#383947;
+	line-height: 40px;
+	font-weight: bold;
 }
