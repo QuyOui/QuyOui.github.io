@@ -69,54 +69,206 @@ div.myName, div.myPic, div.myJob{
 }
 
 .block{
-	background-color:#2E2F3A;
-	padding:10px 10px 20px 10px;
-	text-align: center;
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	display: flex;
+	padding-top:15px;
+	padding-bottom:15px;
 }
 
-.block p{
+.panel{
+	background-color:#2E2F3A;
+	padding:10px 15px 10px 15px;
+	text-align: center;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	width:100%;
+}
+
+.panel p{
 	margin:0px 0 15px 0;
 	padding:0;
 	color:white;
 	font-size:150%;
 }
-.totalBar{
+
+.totalBarH{
 	width:100%;
 	height:40px;
 	background-color:#383947;
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius:3px;
-}
-
-.progressBar{
-	height:40px;
 	margin:10px 0 10px 0;
+}
+
+.totalBarV{
+	height:250px;
+	width:40px;
+	background-color:#383947;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius:3px;
+	margin:0px 10px 0px 10px;
+}
+
+.progressBarH{
+	height:40px;
 	border-radius:3px;
 }
 
-.progressBar.strategy{
+.progressBarV{
+	width:40px;
+	border-radius:3px;
+	position: absolute;
+	bottom: 0;
+}
+
+.strategy{
 	width:90%;
 	background-color:#E86675;
 }
 
-.progressBar.dataAnalytics{
+.dataAnalytics{
 	width:80%;
 	background-color:#A085FF;
 }
 
-.progressBar.programming{
+.programming{
 	width:60%;
 	background-color:#E4D737;
 }
 
-.progressBar.changeManagement{
+.changeManagement{
 	width:75%;
 	background-color:#40E0AD;
 }
 
-.progressBar span{
+.magna{
+	height:237.5px;
+	background-color:#25A4DD;
+	border-top:solid white 2px;
+}
+
+span.magnaDesc{
+	color:white;
+	font-size:80%;
+	position:absolute;
+	left:70px;
+	top:5px;
+	white-space: nowrap;
+}
+.progressBarH span{
 	color:#383947;
-	line-height: 40px;
-	font-weight: bold;
+	font-size:120%;
+	height:40px;
+	line-height:40px;
+}
+
+/*Education Timeline*/
+body{
+  color: #666;
+  font-family: Arial, sans-serif;
+}
+
+h1{
+  text-align: center;
+}
+/* Steps timeline*/
+.steps-timeline {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.step-title,
+.step-description {
+  margin: 0;
+  display: block;
+  text-align: center;
+}
+
+.step-title{
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.ste-description {
+  overflow: hidden;
+  line-height:20px;
+}
+
+.steps-timeline .step {
+  outline: 1px dashed rgba(0, 128, 0, 0);
+  margin-bottom: 20px;
+}
+
+
+.step-milestone{
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: 4px solid #25A4DD;
+  border-radius: 50%;
+  margin: 15px auto;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 678px) {
+  .steps-timeline {
+  	display:none;
+    border-left: 2px solid #3498DB;
+    margin-left: 25px;
+  }
+
+  .steps-timeline  .step {
+    margin-left: -25px;
+    display: block;
+    overflow: auto;
+  }
+
+  .step-milestone {
+    float: left;
+    margin-left: 9px;
+  }
+
+
+  .step-title{
+  	text-align:left;
+  	position: absolute;
+  	left:70px;
+  	padding-top: 20px;
+  }
+
+  .step-description {
+    text-align: center;
+  }
+
+  .step-description p{
+  	font-size:1em;
+  }
+
+
+}
+@media screen and (min-width: 678px) {
+
+  .steps-timeline {
+    border-top: 2px solid #25A4DD;
+    margin-top: 25px;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .steps-timeline .step {
+    margin-top: -30px;
+    -webkit-flex: 1;  /* Safari 6.1+ */
+    -ms-flex: 1;  /* IE 10 */    
+    flex: 1;
+  }
+
+  .step-description p{
+  	font-size:1em;
+  	margin:auto;
+  }
 }
